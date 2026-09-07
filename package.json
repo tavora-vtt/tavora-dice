@@ -1,0 +1,30 @@
+{
+  "name": "@tavora/dice",
+  "version": "0.0.0",
+  "description": "Dice grammar, parser and evaluator shared by the Tavora client and server",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tavora-vtt/tavora-dice.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
